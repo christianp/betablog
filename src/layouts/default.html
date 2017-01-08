@@ -12,13 +12,6 @@
 		{% endblock %}
 		</div>
             
-        <footer id="footer">
-            {% if site.code_highlight %}
-                <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-                <script>hljs.initHighlightingOnLoad();</script>
-            {% endif %}
-            
-            {% block javascript %}{% endblock %}
-        </footer>
+		{% include "footer.html" %}
     </body>
 </html>
