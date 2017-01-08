@@ -10,8 +10,8 @@ comments:
     disqus_shortname: ""
 
 collections:
-  posts:
-    output: true
+    posts:
+        output: true
 
 feed:
     max_item: 10

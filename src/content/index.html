@@ -16,7 +16,7 @@ sort_by: "date"
     {% include "posts-list.html" with { posts: site.posts } %}
 
     {% if site.posts | length < 1 %}
-        <p>Until now, there is no posts. :(</p>
+		<p>There are no posts!</p>
     {% endif %}
 {% else %}
     {% for post in page.pagination.items %}
