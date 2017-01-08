@@ -1,0 +1,16 @@
+{
+    "name": "cp/changes",
+    "type": "spress-plugin",
+    "description": "changes",
+    "keywords": ["spress", "plugin"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "cp",
+            "email": "cp@cp.com"
+        }
+    ],
+    "require": {
+        "spress/spress-installer": "2.0.*"
+    }
+}

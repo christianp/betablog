@@ -1,0 +1,28 @@
+title: "clp's beta blog"
+
+# Your site's domain. E.g: http://yoursite.com
+url: "http://test.aperiodical.com/betablog"
+
+parsedown_actived: true
+
+comments:
+    enabled: false
+    disqus_shortname: ""
+
+collections:
+  posts:
+    output: true
+
+feed:
+    max_item: 10
+
+author:
+    name: Christian Lawson-Perfect
+    twitter: christianp
+
+open_graph:
+    locale: en_GB
+
+# Page menus
+top_menu:
+    - { name: Home, url: "/" }
