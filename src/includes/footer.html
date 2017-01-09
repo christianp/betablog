@@ -1,13 +1,10 @@
 <footer id="footer" class="container">
-	<ul class="nav justify-content-end">
-		<li class="nav-item">
-			<a href="{{site.url}}/rss.xml">RSS</a>
-		</li>
-	</ul>
 	{% if site.code_highlight %}
 		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
 		<script>hljs.initHighlightingOnLoad();</script>
 	{% endif %}
 	
-	{% block javascript %}{% endblock %}
+	{% block javascript %}
+		<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	{% endblock %}
 </footer>

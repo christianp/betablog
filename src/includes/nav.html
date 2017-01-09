@@ -1,6 +1,8 @@
-<nav class="navbar navbar-light bg-faded navbar-toggleable-md">
+<div class="container">
+	<nav class="navbar navbar-light bg-faded navbar-toggleable-md">
 	<a class="navbar-brand" href="{{site.url}}">{{ site.title }}</a>
-	<div class="navbar-collapse collapse">
-		{% include 'menu.html' with { menu: site.top_menu, ul_style: 'navbar-nav mr-auto' } %}
+	<div class="navbar-collapse collapse justify-content-end">
+		{% include 'menu.html' with { menu: site.top_menu, ul_style: 'navbar-nav' } %}
 	</div>
-</nav>
+	</nav>
+</div>

@@ -110,11 +110,13 @@ class CpChanges implements PluginInterface
 		}
 
 		if(count($this->changed_urls)==1) {
-			$message = $this->commit_message."\n".$this->changed_urls[0];
+			$message = substr($this->commit_message,0,120)."\n".$this->changed_urls[0];
 			$this->io->write($message);
 
 			$tw = $siteAttributes['site']['twitter'];
 			$this->twitter = new Twitter($tw['consumer_key'], $tw['consumer_secret'], $tw['access_token'], $tw['access_token_secret']);
+
+			$this->twitter->send($message);
 		}
     }
 }
