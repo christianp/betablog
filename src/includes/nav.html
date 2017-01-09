@@ -1,12 +1,6 @@
-<header>
-<div class="navbar navbar-light bg-faded">
-    <div class="container">
-      <div class="navbar-header">
-		<a class="navbar-brand" href="{{site.url}}">{{ site.title }}</a>
-      </div>
-      <div class="collapse navbar-collapse">
-        {% include 'menu.html' with { menu: site.top_menu, ul_style: 'nav navbar-nav' } %}
-      </div><!--/.nav-collapse -->
-    </div>
-</div>
-</header>
+<nav class="navbar navbar-light bg-faded navbar-toggleable-md">
+	<a class="navbar-brand" href="{{site.url}}">{{ site.title }}</a>
+	<div class="navbar-collapse collapse">
+		{% include 'menu.html' with { menu: site.top_menu, ul_style: 'navbar-nav mr-auto' } %}
+	</div>
+</nav>
