@@ -1,0 +1,20 @@
+prose:
+  rooturl: 'src/content/posts'
+  media: 'src/content/assets/media'
+  ignore:
+    - index.md
+    - config.yml
+    - src/layouts
+    - src/includes
+    - src/plugins
+  metadata:
+    "src/content/posts":
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
