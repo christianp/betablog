@@ -1,0 +1,11 @@
+.navbar {
+	border-bottom: 0.2em solid hsl(0, 0%, 80%);
+	margin-bottom: 2em;
+}
+.navbar-brand img {
+	width: 3em;
+	height: 3em;
+}
+.posts-list-item ~ .posts-list-item {
+	margin-top: 3em;
+}
