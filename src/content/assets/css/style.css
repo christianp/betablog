@@ -7,5 +7,15 @@
 	height: 3em;
 }
 .posts-list-item ~ .posts-list-item {
-	margin-top: 3em;
+	margin-top: 5em;
+}
+.post header {
+	margin-bottom: 2rem;
+}
+.post footer {
+	margin-top: 2rem;
+}
+twitterwidget {
+	margin-left: auto;
+	margin-right: auto;
 }
