@@ -13,7 +13,8 @@
     ],
     "require": {
         "spress/spress-installer": "2.0.*",
-        "dg/twitter-php": "^3.6"
+        "dg/twitter-php": "^3.6",
+		"yosymfony/spress-plugin-more-tag": "2.0.*"
     },
     "replace": {
         "yosymfony/spress-theme-spresso": "self.version"

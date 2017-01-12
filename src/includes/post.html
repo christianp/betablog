@@ -1,17 +1,31 @@
 <article class="post">
     <header>
-        <h1>
+		<h1 class="{% if isPostLayout %}display-1{% endif %}">
 			<a href="{{site.url}}{{ post.url }}">{{ post.title }}</a>
         </h1>
     </header>
+
+	{% set content = post.content|tweets %}
     
-    {{ post.content }}
+	{% if content is with_excerpt %}
+		{% if isPostLayout %}
+			<div class="lead">
+				{{ content|excerpt }}
+			</div>
+			{{ content|after_content }}
+		{% else %}
+			{{content|excerpt}}
+		{% endif %}
+	{% else %}
+		{{content}}
+	{% endif %}
     
     {% if isPostLayout %}
         <footer>    
-            <p>
-            	Posted by {{ site.author.name }} on <time pubdate="pubdate">{{ post.date | date('Y-m-d') }}</time>
-            </p>
+			<ul class="list-inline">
+				<li class="list-inline-item">Posted by {{ site.author.name }} on <time pubdate="pubdate">{{ post.date | date('Y-m-d') }}</time></li>
+				<li class="list-inline-item"><a href="http://prose.io/#christianp/betablog/edit/master/src/content/posts/{{post.filename}}.md">Edit</a></li>
+			</ul>
 
             {% if post.terms_url.tags | length > 0 or post.terms_url.categories | length > 0 %}
             <ul class="list-unstyled">
