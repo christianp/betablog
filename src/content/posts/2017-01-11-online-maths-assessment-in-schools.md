@@ -28,7 +28,7 @@ https://twitter.com/christianp/status/818781004185927680
 * [Hegartymaths](https://www.go4schools.com/) - videos with printable worksheets.
 * [Office365](https://products.office.com/en-gb/academic/compare-office-365-education-plans) - I suppose they must just put word docs in a shared folder?
 * [ClassCharts](https://www.classcharts.com/) - "seating planning and behaviour management", if that isn't too dystopian. Connects to SIMS
-* [Mathspace](https://mathspace.co/) - it's that clever line-by-line marking thing! Does handwriting recognition, though the UI is a bit fiddly. Teacher claims kids get on with it fine anyway. A little bit slow - it sends off to a server for pretty much any op. Very impressive interface. Recommends activites adaptively. No mention of price, because I bet it's enormous.
+* [Mathspace](https://mathspace.co/) - it's that clever line-by-line marking thing! Does handwriting recognition, though the UI is a bit fiddly. Teacher claims kids get on with it fine anyway. A little bit slow - it sends off to a server for pretty much any op. Very impressive interface. Recommends activites adaptively. According to [Tim Stirrup](https://twitter.com/timstirrup, it's £5 per student per year.
 
 ## Conclusion
 
