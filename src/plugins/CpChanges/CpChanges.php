@@ -104,12 +104,12 @@ class CpChanges implements PluginInterface
 		foreach($items as $item) {
 			$source = $item->getPath(ItemInterface::SNAPSHOT_PATH_RELATIVE);
 			if(in_array($source,$this->changed_files)) {
-				$url = $site_url . '/' . $item->getPath();
+				$url = $site_url . '/' . preg_replace('#/index.html$#','',$item->getPath());
 				$this->changed_urls[] = $url;
 			}
 		}
 
-		if(count($this->changed_urls)==1) {
+		if(count($this->changed_urls)==1 && substr($this->commit_message,0,1)!='!') {
 			$message = substr($this->commit_message,0,120)."\n".$this->changed_urls[0];
 			$this->io->write($message);
 

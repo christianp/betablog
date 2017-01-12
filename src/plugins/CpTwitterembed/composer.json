@@ -1,0 +1,16 @@
+{
+    "name": "cp/twitterembed",
+    "type": "spress-plugin",
+    "description": "Embed tweets with the URL",
+    "keywords": ["spress", "plugin"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christian Lawson-Perfect",
+            "email": "christianperfect@gmail.com"
+        }
+    ],
+    "require": {
+        "spress/spress-installer": "2.0.*"
+    }
+}
