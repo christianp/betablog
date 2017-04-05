@@ -103,7 +103,7 @@ class CpChanges implements PluginInterface
 		$this->changed_urls = array();
 		foreach($items as $item) {
 			$source = $item->getPath(ItemInterface::SNAPSHOT_PATH_RELATIVE);
-			if(in_array($source,$this->changed_files)) {
+			if($item->getCollection()=='posts' && in_array($source,$this->changed_files)) {
 				$url = $site_url . '/' . preg_replace('#/index.html$#','',$item->getPath());
 				$this->changed_urls[] = $url;
 			}
